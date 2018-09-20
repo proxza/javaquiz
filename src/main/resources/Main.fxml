@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="607.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.jvsn.jq.controllers.MainController">
+   <children>
+      <AnchorPane fx:id="questionPane" prefHeight="454.0" prefWidth="600.0">
+         <children>
+            <Label fx:id="questionLabel" alignment="TOP_CENTER" layoutY="4.0" prefHeight="145.0" prefWidth="600.0" text="Вопросы" wrapText="true">
+               <font>
+                  <Font name="Verdana" size="21.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding></Label>
+            <VBox fx:id="questionImgPane" layoutX="5.0" layoutY="148.0" prefHeight="205.0" prefWidth="588.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="114.0" prefWidth="605.0">
+         <children>
+            <Separator layoutX="5.0" prefHeight="11.0" prefWidth="600.0" />
+            <Label fx:id="watchProgress" alignment="CENTER" layoutX="10.0" layoutY="5.0" prefHeight="17.0" prefWidth="576.0" text="Label">
+               <font>
+                  <Font name="Verdana" size="10.0" />
+               </font>
+            </Label>
+            <Separator layoutX="5.0" layoutY="20.0" prefHeight="11.0" prefWidth="600.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="answersPane" prefHeight="247.0" prefWidth="600.0">
+         <children>
+            <VBox fx:id="answersVBox" layoutX="14.0" layoutY="7.0" prefHeight="177.0" prefWidth="576.0" />
+         </children></AnchorPane>
+      <AnchorPane prefHeight="136.0" prefWidth="600.0">
+         <children>
+            <Button fx:id="btnSendAnswer" layoutX="189.0" layoutY="1.0" mnemonicParsing="false" onAction="#btnAnswerPressed" prefHeight="26.0" prefWidth="97.0" text="Ответить">
+               <font>
+                  <Font name="Verdana Bold" size="11.0" />
+               </font></Button>
+            <Button fx:id="btnEndTest" layoutX="314.0" layoutY="2.0" mnemonicParsing="false" onAction="#btnEndTestPressed" prefHeight="25.0" prefWidth="112.0" text="Закончить тест">
+               <font>
+                  <Font name="Verdana Bold" size="11.0" />
+               </font></Button>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

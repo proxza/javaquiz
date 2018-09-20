@@ -1,0 +1,20 @@
+.alertstyle{
+    -fx-background-color: #ffffff;
+}
+.alertstyle > *.button-bar > *.container{
+    -fx-background-color: #27aae1;
+}
+.alertstyle > *.label.content{
+    -fx-font-family: Verdana;
+    -fx-font-size: 11px;
+}
+.alertstyle:header *.header-panel{
+    -fx-background-color: #27aae1;
+}
+.alertstyle:header *.header-panel *.label{
+    -fx-font-family: Verdana;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+    -fx-fill: #27aae1;
+}
